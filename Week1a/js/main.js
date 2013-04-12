@@ -17,6 +17,13 @@ var docGetId = function(x) {
 
 
 
+var browseLinks = function() {
+	var muteLinks = docGetId("browseLinksId");
+	muteLinks.removeAttribute("hidden","true");
+
+
+}
+
 
 
 /* ========== Define Variables ========== */

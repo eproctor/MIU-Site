@@ -8,6 +8,100 @@ for: VFW - CSS Selectors
 */
 
 
+.contactLink {
+
+	//font-size: 1.5em;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: -20px;
+	margin-bottom: 20px;
+
+}
+
+
+#searchHeader {
+
+	margin: 30px 0 0 10px;
+
+}
+
+#search {
+
+	margin-left: 50px;
+	margin-top: 10px;
+
+}
+
+
+#searchImg {
+
+	margin-left: 10%;
+	margin-top:  15px;
+	margin-bottom: 30px;
+
+}
+
+#browse {
+
+	margin-top: 15px;
+	margin-left: 10px;
+
+
+}
+
+
+
+#browseImage {
+
+	margin-left: 10%;
+	margin-top: 15px;
+
+
+}
+
+
+
+.blue {
+	color: #0063ec; //blue
+
+}
+
+
+
+#on {
+
+text-decoration: underline;
+color: #64ee0b;  //green
+}
+
+
+#greenon {
+
+text-decoration: underline;
+color: green;
+
+
+}
+
+
+.onbutton {
+	margin-left: 10%;
+	margin-top: -1px;
+	width: 310px;
+	height: 190px;
+
+
+}
+
+.offbutton {
+	margin-left: 12%;
+	width: 310px;
+	height: 190px;
+	/*margin-top: 5%;*/
+}
+
+
+
 #ratingTape {
 	margin-left:  10px;
 	color: #0063ec;  /* blue */
@@ -219,6 +313,9 @@ img  {
 	height: 45px;
 
 }
+
+
+
 
 ul {
 	
