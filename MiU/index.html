@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Eugene Proctor :: Project 1 :: MIU 1304 </title>
+		<title>App Name :: No Texting While Driving</title>
+		<meta charset="UTF-8" />
+		<meta name="description" contect="Launch Page for - No Texting While Driving App" />
+		<meta name="keyword" contect="No Texting While Driving" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+
+	<body>
+		
+		<header>
+			<h1>No Texting - While Driving</h1>	
+			<h2 class="contactRegTitle">Contact Registration</h2>
+		</header>
+		
+			<!-- p>Establish Points of Contacts for the No Texting While Driving App </p -->
+			<div class="contactLink" ><a href="additem.html" title="Registration"> Add Points of Contact</a></div>
+			
+		<hr>
+		<header>
+			<h3>Waiting to Monitor... Click <span id="greenon">"on"</span> to Start</h3>		
+		</header>
+		
+					
+		<span class="mouse">  
+		<img class="onbutton" src="images/lg_logo_border_fd3_01_06.gif" alt="Monitor_On" width="310" height="190"
+		onclick="appon()">
+		</span>
+		 
+			
+		<hr>	
+
+
+			<li id="searchHeader"><span><strong>Search Contact by <span class="blue">Relationship...</span></strong></span>
+				<select id="city">
+					<optgroup label="Please Choose:">
+						<option value="Make Selection">Make a Selection</option>
+						<option value="parent">Parent</option>
+						<option value="aunt">Aunt</option>
+						<option value="guardian">Guardian</option>
+						<option value="brother">Brother</option>
+						<option value="sister">Sister</option>
+					</optgroup>	
+				</select>
+			</li>
+			
+					
+		
+					<!-- li -->
+						<!-- form action = "#" method="post" id="checkBoxField" -->
+						
+							
+						<div> <input type = "image" id="searchImg" src="images/SearchContacts.png" alt="Search" width="400" height="45">
+						</div>	
+						<!-- /form -->
+					<!-- /li -->	
+
+			
+			
+			<!-- span class="mouse" -->
+			<input type = "image" id="browseImage" src="images/BrowseOptions.png" alt="Install Update" width="400" height="45" onclick="browseLinks()">
+		
+<ul id="browseLinksId" hidden=true>
+						
+			<li class="browseLinks"><a href="testConfig.txt" title="IncomingCall"> Mute Incoming Call Notifications</a></li>
+			<li class="browseLinks"><a href="testConfig.txt" title="IncomingCall"> Mute Incoming Text Notifications</a></li>
+			<li class="browseLinks"><a href="testConfig.txt" title="IncomingCall"> Prevent Screen Alert during Incoming Calls</a></li>
+				
+			</li>
+</ul>
+		<footer>
+		
+
+		</footer>	
+	
+		<script type="text/javascript" src="js/main.js"></script>
+		
+	</body>
+
+</html>
