@@ -1,4 +1,4 @@
-/* Name: Eugene Proctor :: Project 1 :: VFW 1303 */
+/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
 
 /* ========== Waiting on Dom to be ready  ========== */
 
