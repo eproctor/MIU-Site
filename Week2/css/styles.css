@@ -1,0 +1,326 @@
+/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
+
+
+/*
+title: Web App Part 1 - css file 
+by: Eugene Proctor   Term: 1304
+for: MiU - CSS Selectors
+*/
+
+
+.contactLink {
+
+	//font-size: 1.5em;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: -20px;
+	margin-bottom: 20px;
+
+}
+
+
+#searchHeader {
+
+	margin: 30px 0 0 10px;
+
+}
+
+#search {
+
+	margin-left: 50px;
+	margin-top: 10px;
+
+}
+
+
+#searchImg {
+
+	margin-left: 10%;
+	margin-top:  15px;
+	margin-bottom: 30px;
+
+}
+
+#browse {
+
+	margin-top: 15px;
+	margin-left: 10px;
+
+
+}
+
+
+
+#browseImage {
+
+	margin-left: 10%;
+	margin-top: 15px;
+
+
+}
+
+
+
+.blue {
+	color: #0063ec; //blue
+
+}
+
+
+
+#on {
+
+text-decoration: underline;
+color: #64ee0b;  //green
+}
+
+
+#greenon {
+
+text-decoration: underline;
+color: green;
+
+
+}
+
+
+.onbutton {
+	margin-left: 10%;
+	margin-top: -1px;
+	width: 310px;
+	height: 190px;
+
+
+}
+
+.offbutton {
+	margin-left: 12%;
+	width: 310px;
+	height: 190px;
+	/*margin-top: 5%;*/
+}
+
+
+
+#ratingTape {
+	margin-left:  10px;
+	color: #0063ec;  /* blue */
+	font-weight:bold;
+	border: 1px solid black;
+	background-color: white;
+	padding: 5px 5px;
+
+
+}
+
+
+
+#key, .required {
+	color: red;
+
+}
+
+
+.dcaRow {
+
+	margin-left: 8em; 
+	font-family: "myriad pro", Times, serif;
+	font-weight: bold;
+
+}
+
+body {
+	 background: #e1b016; 
+}
+
+h1 {
+	text-align: center;
+	font-family: "myriad pro", Times, serif;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+h2 {
+	font-family: "myriad pro", Times, serif;
+	text-align: left;
+}
+
+a:hover {
+	color: #f8620a; /* orange */
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: #0063ec;  /* blue */
+}
+
+p {
+	color: #000000;
+	font-family: "myriad pro", Times, serif;
+	line-height: 1.5em;
+	
+}
+
+legend {
+	font-weight: bold;
+}
+
+
+
+label, input {
+	margin-bottom: 10px;
+}
+
+
+
+.moreSpace {
+
+	margin-bottom: 20px;
+}
+
+
+
+.moreSpaceTwo {
+
+	margin-bottom: 15px; 
+ 
+}
+
+
+.moreSpaceSurvey {
+
+	margin-bottom: 5px;
+
+}
+
+
+
+.moreSpaceDes {
+
+	margin-bottom: 0px;
+	margin-top: 15px;
+
+}
+
+
+
+.moreSpaceUp {
+
+	margin-top: 50px;
+	border: 1px solid yellow;
+	
+}
+
+
+.moreSpace li {
+
+	margin-bottom: 20px;
+}
+
+
+
+#startdate, #fullName {
+	float: right;
+	border: 1px solid black; 
+}
+
+
+/*delete fontEmail line 66*/
+#fontEmail {
+	border: 1px solid #e1b016; 
+}
+
+
+
+#email {
+	border: 1px solid black;
+	float: right;
+}
+
+/*delete fontCity*/
+#fontCity {
+/*	border: 1px solid red; */
+}
+
+
+#city {
+/*	border: 1px solid blue; */
+	float: right;
+}
+
+
+.turnGreenTravel {
+
+	margin-top: 20px;
+
+}
+
+
+input:focus, textarea:focus {
+	background-color:yellow;
+}
+
+
+.desTextBox {
+
+	border: 2px solid #0063ec;  /*blue*/
+	background-color:yellow;
+}
+
+
+.turnGreen {
+
+	float: right;
+	border: 2px solid #0063ec;	
+	
+}
+
+
+#greenBorder {
+		float: right;
+		border: 2px solid #0063ec;
+		background-color:yellow;
+
+}
+
+#turnGreen {
+
+		float: right;
+		border: 2px solid #0063ec;
+		background-color:yellow;
+
+}
+
+#greenBorderCity {
+
+		float: right;
+		border: 2px solid #0063ec;
+		background-color:yellow;
+
+}
+
+#errorValidation {
+	
+		color: red;
+}
+
+img  {
+
+	list-style: none;
+	margin-top: 40px;
+	width: 400px;
+	height: 45px;
+
+}
+
+
+
+
+ul {
+	
+	list-style: none;
+
+
+}
+
