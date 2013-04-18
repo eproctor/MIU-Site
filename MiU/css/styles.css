@@ -8,6 +8,15 @@ for: MiU - CSS Selectors
 */
 
 
+
+
+#pocLink {
+
+margin: 140px 0 0 0;
+
+}
+
+
 .contactLink {
 
 	//font-size: 1.5em;
@@ -27,7 +36,7 @@ for: MiU - CSS Selectors
 
 #search {
 
-	margin-left: 50px;
+//	margin-left: 50px;
 	margin-top: 10px;
 
 }
@@ -85,11 +94,12 @@ color: green;
 
 
 .onbutton {
-	margin-left: 10%;
+	margin-left: 20%;
 	margin-top: -1px;
-	width: 310px;
-	height: 190px;
-
+/*	width: 310px; */
+/*	height: 190px; */
+	width: 190px;
+	height: 90px;
 
 }
 
@@ -123,7 +133,7 @@ color: green;
 
 .dcaRow {
 
-	margin-left: 8em; 
+	margin-left: 4em; 
 	font-family: "myriad pro", Times, serif;
 	font-weight: bold;
 
@@ -133,12 +143,13 @@ body {
 	 background: #e1b016; 
 }
 
-h1 {
+/* h1 {
 	text-align: center;
 	font-family: "myriad pro", Times, serif;
 	border: 2px solid black;
 	padding: 10px;
 }
+*/
 
 h2 {
 	font-family: "myriad pro", Times, serif;
@@ -309,8 +320,10 @@ img  {
 
 	list-style: none;
 	margin-top: 40px;
-	width: 400px;
+/*	width: 400px; */
+	width: 300px;
 	height: 45px;
+	
 
 }
 
@@ -320,6 +333,7 @@ img  {
 ul {
 	
 	list-style: none;
+	margin-left: -2em;
 
 
 }
