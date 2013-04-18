@@ -1,8 +1,8 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
+/* Name: Eugene Proctor :: Project 2 :: MIU 1304 */
 
 
 /*
-title: Web App Part 1 - css file 
+title: Web App Part 2 - css file 
 by: Eugene Proctor   Term: 1304
 for: MiU - CSS Selectors
 */
@@ -12,10 +12,16 @@ for: MiU - CSS Selectors
 
 #pocLink {
 
-margin: 140px 0 0 0;
+	margin: 95px 0 0 0;
+/*	margin: 140px 0 0 0;*/
 
 }
 
+#browseLink {
+
+	margin: 0 0 -5px 0;
+
+}
 
 .contactLink {
 
