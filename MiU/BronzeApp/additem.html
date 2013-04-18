@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		
+		<title>Eugene Proctor :: Project 1 :: MIU 1304 </title>
+		<meta charset="UTF-8" />
+		<meta name="description" contect="Launch Page for - No Texting While Driving App" />
+		<meta name="keyword" contect="No Texting While Driving" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		
+	</head>
+
+		<body>
+		
+		<div id="display">
+		<div id="display2">
+			
+			<header>
+				<h1>No Texting - While Driving</h1> 
+				<h2>Owner Registration - Points of Contact</h2>
+			</header>
+			
+			<article>
+			
+				<p>This is the Registration Page to establish Points of Contact; for the No Texting - While Driving App</p>
+				
+			</article>
+				<div class="moreSpace">		
+					<div class="dcaRow">											
+						 <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display Data |</a></span>
+						 <span><a href="#" onclick="clearData()" title="Clear Data"> Clear Data |</a></span>
+						 <span><a href="#" onclick="addContact()" title="Add Another Contact"> Add Contact</a></span>
+						
+					</div>
+				</div>
+			
+				<div id="editLink">
+					<div  id="hide">
+						<form action = "#" method="post" id="checkBoxField" >
+							<fieldset>
+								<legend>Point of Contact</legend>
+								<div><ul id="errorValidation"></ul></div>
+								
+									<ul class="moreSpace">
+										<li><label id="key"> *Required Field</label></li>
+										<li >							
+											<label for="startdate">Today&#39;s Date:</label>
+											<input  type="date" min="2012-01-01" max="2013-12-31" id="startdate" name="startdate" placeholder="yyyy-mm-dd"/>
+										</li>
+ 
+											<li><label class="moreSpaceTwo" for="fullName">Point of Contact :<span class="required">*</span></label><input type="text" id="fullName" /></li>
+ 
+											<!-- li><label class="moreSpaceTwo" for="email">Email Address :</label><input type="email" id="email" placeholder="example@email.com"/ -->
+											<li><label class="moreSpaceTwo" for="email">Email Address :<span class="required">*</span></label><input type="email" id="email"/>
+											</li>
+											<li class="moreSpace"><span>City you live in:</span>
+												<select id="city">
+													<optgroup label="Please Choose:">
+														<option value="Make Selection">Make a Selection</option>
+														<option value="atlanta">Atlanta</option>
+														<option value="charlotte">Charlotte</option>
+														<option value="florida">Florida</option>
+													</optgroup>	
+												</select>
+											</li>
+ 
+									</ul>
+							</fieldset>
+							<fieldset>
+								<legend>Survey</legend>		
+									<ul>
+										
+										<li class="moreSpace">Relationship to Owner</li>
+											<ul>
+												<li class="moreSpaceSurvey"><input id="parent" type="checkbox" name="survey" value="parent" /><label for="parent">Parent</label></li>
+												<li class="moreSpaceSurvey"><input id="aunt" type="checkbox" name="survey" value="aunt" /><label for="aunt">Aunt</label></li>
+												<li class="moreSpaceSurvey"><input id="guardian" type="checkbox" name="survey" value="guardian" /><label for="guardian">Guardian</label></li>
+												<li class="moreSpaceSurvey"><input id="brother" type="checkbox" name="survey" value="brother" /><label for="brother">Brother</label></li>
+												<li class="moreSpaceSurvey"><input id="sister" type="checkbox" name="survey" value="sister" /><label for="sister">Sister</label></li>
+											</ul>
+										<li class="moreSpaceDes"><label for="description">Would you recommend this app to a friend?</label><br>
+											<textarea id="description">Comment Here...</textarea></li>
+									</ul>
+								
+									<ul>
+										 <li class="turnGreenTravel">How many miles do you travel each day?</li>
+											<ul>
+												<li><label for="rating"> "Miles are from 1 to 100:"</label>
+													<input id="rating" type="range" min="1" max="100" name="rating"/><span id="ratingTape">Counter</span>
+												</li> 
+												<li><input type="hidden" value="false"/>
+												</li> 
+											</ul>
+									</ul>
+							</fieldset>	
+						
+							<footer>
+								<nav>
+									<ul>
+										 <li class="moreSpace"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display Data |</a></span>
+											 <span><a href="#" onclick="clearData()" title="Clear Data"> Clear Data</a></span>
+										 </li>
+										
+										<li><input type="button" onclick="validate()" id="submitButton" value="Submit Information" />
+										</li>
+									</ul>
+								</nav>
+							</footer>
+							<div id="contact"></div>
+						</form>	
+					</div>	
+				</div>
+				
+			<script type="text/javascript" src="js/json.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<!-- script type="text/javascript" src="js/ValEmail.js"></script -->
+		</div>
+		</div>
+	</body>
+
+</html>
