@@ -6,13 +6,6 @@
 
 
 
-var setPage = function() {
-
-	location.reload();
-
-}
-
-
 
 var docGetId = function(x) {
 
