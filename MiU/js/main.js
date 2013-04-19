@@ -5,6 +5,15 @@
 //window.addEventListener("DOMContentLoaded", function() {
 
 
+
+var setPage = function() {
+
+	location.reload();
+
+}
+
+
+
 var docGetId = function(x) {
 
 	var theId = document.getElementById(x);
