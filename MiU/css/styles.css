@@ -9,10 +9,54 @@ for: MiU - CSS Selectors
 
 
 
+#searchTitle {
+
+margin-top: -10px;
+margin-bottom: -5px;
+font-size: 15px;
+
+
+}
+
+
+#boxSearch {
+	
+/*	margin: -18px 0 0 0;*/
+	font-size: 12px;
+/*	width: 300px;
+	height: 45px;
+*/	
+
+}
+
+
+#searchBut {
+
+	margin: -9px 0 0 0;
+	padding: .2em 16px;
+/*	width: 50%;
+	height: 50%;
+*/
+}
+
+
+#searchblock {
+
+	margin: 5px 0 0 0;
+
+}
+
+
+
+#pageSearch {
+
+	margin: -5px 0 0 0;
+
+}
 
 #pocLink {
 
-	margin: 95px 0 0 0;
+	margin: 30px 0 0 0;
 /*	margin: 140px 0 0 0;*/
 
 }
@@ -92,7 +136,7 @@ color: #64ee0b;  //green
 
 #greenon {
 
-text-decoration: underline;
+/*text-decoration: underline;*/
 color: green;
 
 

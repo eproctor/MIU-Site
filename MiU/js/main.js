@@ -7,6 +7,8 @@
 
 
 
+
+
 var docGetId = function(x) {
 
 	var theId = document.getElementById(x);
@@ -16,7 +18,27 @@ var docGetId = function(x) {
 
 
 
+// locate the id for Search
+var startSearch = function () {
 
+
+}
+
+
+
+
+var boxSearch = docGetId("pageSearch");
+var searchBoxButton = docGetId("searchBut")
+
+
+
+
+
+
+//docGetId("reloadPage").addEventListener("click", location.reload); 
+/*
+var setPage = docGetId("reloadPage");
+setPage.setAttribute("click",location.reload);
 
 
 var browseLinks = function() {
@@ -25,7 +47,7 @@ var browseLinks = function() {
 
 
 }
-
+*/
 
 
 /* ========== Define Variables ========== */
