@@ -7,8 +7,6 @@
 
 
 
-
-
 var docGetId = function(x) {
 
 	var theId = document.getElementById(x);
@@ -26,11 +24,7 @@ var docGetId = function(x) {
 // Grab the data out of local Storage;
 var startSearch = function() {
 
-
-
-
-		
-						
+				
 							var newDiv = document.createElement("div");
 							var viewList = document.getElementById("clearScreen");
 							
@@ -152,10 +146,6 @@ var pageSearch = docGetId("boxSearch");
 var searchBoxButton = docGetId("searchBut");
 
 searchBoxButton.addEventListener("click", startSearch);
-
-
-
-
 
 
 
