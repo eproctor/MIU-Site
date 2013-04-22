@@ -545,7 +545,7 @@ clearBottom.removeAttribute("id","contact");
 		var surveyImageLi = document.createElement("li");
 		anotherUl.appendChild(surveyImageLi)
 		var newPic = document.createElement("img");
-		var setPicSource = newPic.setAttribute("src","css/images/" + picName + ".png");
+		var setPicSource = newPic.setAttribute("src","css/images1/" + picName + ".png");
 		surveyImageLi.appendChild(newPic);
 		
 		
