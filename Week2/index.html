@@ -3,7 +3,7 @@
 
 	<head>
 		
-		<title>Eugene Proctor :: Project 1 :: MIU 1304 </title>
+		<title>Eugene Proctor :: Project 2 :: MIU 1304 </title>
 		<title>App Name :: No Texting While Driving</title>
 		
 		<!--  Testing Code -  Mobile viewport optimized: j.mp/bplateviewport -->
@@ -44,8 +44,14 @@
 			</div>			
 			
 			<div data-role="content">
-			
-				<h3>Waiting to Monitor... Click <span id="greenon">"on"</span> to Start</h3>
+				<h3 id="searchTitle">Search:</h3>
+				
+				<div class="ui-grid-a" id="searchblock">
+					<div class = "ui-block-a"><input type="text" id="boxSearch"></div>
+					<div class = "ui-block-b" id="searchBut" onclick="startSearch"><input type="button" value="Submit"></div>
+				</div>
+					 <p id="clearScreen"></p>	
+					<h3>Waiting to Monitor... <span id="greenon"> Click "on"</span> to Start</h3>
 				
 				<p class="mouse">  
 					<img class="onbutton" src="images/lg_logo_border_fd3_01_06.gif" alt="Monitor_On" width="160" height="40"
@@ -53,7 +59,8 @@
 				</p>
 			
 				
-				<!-- p><a href="#poc"  data-theme="a" data-role="button" data-icon="arrow-r" data-iconpos="right">Contact Registration</a></p -->
+				<p id="pocLink"><a href="additem.html"  data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">Add Points of Contacts</a></p>
+				<p id="browseLink"><a href="#poc"  data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">Browse Contact List</a></p>
 				
 			
 			</div>
@@ -84,24 +91,32 @@
 			
 			<div data-role="content">
 			
+			<h3 id="searchTitle">Search:</h3>
+				
+				<div class="ui-grid-a" id="searchblock">
+					<div class = "ui-block-a"><input type="text" id="boxSearch"></div>
+					<div class = "ui-block-b" id="searchBut"><input type="button" value="Submit"></div>
+				</div>
+					
+			
 				<ul data-role="listview" data-inset="true">
 				<li data-role="list-divider">MIU 1304 - Admin</li>
 					<li>
-						<a href="#testPage">
+						<a href="http://eproctor.github.io/MIU-Site/MiU/BronzeApp/index.html">
 							<h3>Bronze App</h3>
 							<!-- p>MIU 1304</p -->
 						</a>
 					</li>
 				<!-- li data-role="list-divider">Lower Ship</li -->
 					<li>
-						<a href="#testPage">					
+						<a href="http://eproctor.github.io/MIU-Site/MiU/GoldApp/index.html">					
 							<h3>Gold App</h3>
 							<!-- p>MIU 1304</p -->
 						</a>
 					</li>
 					
 					<li>
-						<a href="#testPage">					
+						<a href="https://github.com/eproctor/MIU-Site/tree/gh-pages/MiU/BronzeApp">					
 							<h3>Bronze gh-pages</h3>
 							<!-- p>MIU 1304</p -->
 						</a>
@@ -109,7 +124,7 @@
 					
 					
 					<li>
-						<a href="#testPage">					
+						<a href="https://github.com/eproctor/MIU-Site/tree/gh-pages/MiU/GoldApp">					
 							<h3>Gold gh-pages</h3>
 							<!-- p>MIU 1304</p -->
 						</a>
@@ -118,7 +133,7 @@
 					
 						
 					<li>
-						<a href="#testPage">					
+						<a href="https://github.com/eproctor/MIU-Site/tree/gh-pages">					
 							<h3>Github Repository</h3>
 							<!-- p>MIU 1304</p -->
 						</a>
@@ -164,6 +179,13 @@
 			
 			<div data-role="content">
 				
+				<h3 id="searchTitle">Search:</h3>
+				
+				<div class="ui-grid-a" id="searchblock">
+					<div class = "ui-block-a"><input type="text" id="boxSearch"></div>
+					<div class = "ui-block-b" id="searchBut"><input type="button" value="Submit"></div>
+				</div>
+					
 							
 				<div data-role="collapsible-set">
 					<div data-role="collapsible" data-collapsed="true" data-theme="b">
@@ -227,7 +249,16 @@
 	
 			
 			<div data-role="content">
-				<ul data-role="listview" data-filter="true" data-inset="true">
+
+			<h3 id="searchTitle">Search:</h3>
+				
+				<div class="ui-grid-a" id="searchblock">
+					<div class = "ui-block-a"><input type="text" id="boxSearch"></div>
+					<div class = "ui-block-b" id="searchBut"><input type="button" value="Submit"></div>
+				</div>
+					
+
+				<ul data-role="listview" data-inset="true">
 				<li data-role="list-divider">Sports</li>
 					<li>
 						<a href="#testPage">
@@ -254,13 +285,6 @@
 	
 	
 			</div>
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	

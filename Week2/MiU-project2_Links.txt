@@ -1,0 +1,28 @@
+Link to my Git Depository:
+https://github.com/eproctor/MIU-Site/tree/gh-pages
+
+
+Link to my publish pages:
+http://eproctor.github.io/MIU-Site/MiU/index.html
+
+http://eproctor.github.io/MIU-Site/MiU/index.html
+
+
+Bronze App
+http://eproctor.github.io/MIU-Site/MiU/BronzeApp/index.html
+
+
+Gold App
+http://eproctor.github.io/MIU-Site/MiU/GoldApp/index.html
+
+
+Gh Pages - Bronze
+https://github.com/eproctor/MIU-Site/tree/gh-pages/MiU/BronzeApp
+
+
+GH Pages - Gold
+https://github.com/eproctor/MIU-Site/tree/gh-pages/MiU/GoldApp
+
+
+Git Hub Repository
+https://github.com/eproctor/MIU-Site/tree/gh-pages

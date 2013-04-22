@@ -49,14 +49,7 @@ var startSearch = function() {
 							var newLi = document.createElement("li");
 							newUl.appendChild(newLi);
 								
-								
-								
-								
-							
-								
-								
-								
-								
+						
 
 	if (pageSearch.value != "") {
 
@@ -69,10 +62,7 @@ var startSearch = function() {
 		
 		for (var i=0, len=localStorage.length; i<len; i++) {
 			
-				
-				
-				
-				
+					
 				
 				var key = localStorage.key(i);
 				var correctContact = localStorage.getItem(key);
@@ -95,11 +85,6 @@ var startSearch = function() {
 //					
 						for (var q in contact) {
 						
-						
-						
-						
-						
-						
 							
 					
 					//var anotherLi = document.createElement("li");
@@ -107,17 +92,7 @@ var startSearch = function() {
 							
 							var ulBox = document.createElement("ul");
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+				
 
 						var newSubli = document.createElement("li");
 						

@@ -1,12 +1,77 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
+/* Name: Eugene Proctor :: Project 2 :: MIU 1304 */
 
 
 /*
-title: Web App Part 1 - css file 
+title: Web App Part 2 - css file 
 by: Eugene Proctor   Term: 1304
 for: MiU - CSS Selectors
 */
 
+/*
+#clearScreen {
+
+	margin-bottom: 10px;
+
+}
+*/
+
+#searchTitle {
+
+margin-top: -10px;
+margin-bottom: -5px;
+font-size: 15px;
+
+
+}
+
+
+#boxSearch {
+	
+/*	margin: -18px 0 0 0;*/
+	font-size: 12px;
+/*	width: 300px;
+	height: 45px;
+*/	
+
+}
+
+
+#searchBut {
+
+	margin: -9px 0 0 0;
+	padding: .2em 16px;
+/*	width: 50%;
+	height: 50%;
+*/
+}
+
+
+#searchblock {
+
+	margin: 5px 0 0 0;
+
+}
+
+
+
+#pageSearch {
+
+	margin: -5px 0 0 0;
+
+}
+
+#pocLink {
+
+	margin: 30px 0 0 0;
+/*	margin: 140px 0 0 0;*/
+
+}
+
+#browseLink {
+
+	margin: 0 0 -5px 0;
+
+}
 
 .contactLink {
 
@@ -77,7 +142,7 @@ color: #64ee0b;  //green
 
 #greenon {
 
-text-decoration: underline;
+/*text-decoration: underline;*/
 color: green;
 
 
@@ -124,7 +189,7 @@ color: green;
 
 .dcaRow {
 
-	margin-left: 8em; 
+	margin-left: 4em; 
 	font-family: "myriad pro", Times, serif;
 	font-weight: bold;
 
@@ -311,8 +376,10 @@ img  {
 
 	list-style: none;
 	margin-top: 40px;
-	width: 400px;
+/*	width: 400px; */
+	width: 300px;
 	height: 45px;
+	
 
 }
 
@@ -322,6 +389,7 @@ img  {
 ul {
 	
 	list-style: none;
+	margin-left: -2em;
 
 
 }
