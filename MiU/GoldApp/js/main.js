@@ -26,11 +26,7 @@ var docGetId = function(x) {
 // Grab the data out of local Storage;
 var startSearch = function() {
 
-
-
-
-		
-						
+	
 							var newDiv = document.createElement("div");
 							var viewList = document.getElementById("clearScreen");
 							
@@ -49,13 +45,7 @@ var startSearch = function() {
 							var newLi = document.createElement("li");
 							newUl.appendChild(newLi);
 								
-								
-								
-								
 							
-								
-								
-								
 								
 
 	if (pageSearch.value != "") {
@@ -69,10 +59,7 @@ var startSearch = function() {
 		
 		for (var i=0, len=localStorage.length; i<len; i++) {
 			
-				
-				
-				
-				
+			
 				
 				var key = localStorage.key(i);
 				var correctContact = localStorage.getItem(key);
@@ -95,29 +82,13 @@ var startSearch = function() {
 //					
 						for (var q in contact) {
 						
-						
-						
-						
-						
-						
-							
 					
 					//var anotherLi = document.createElement("li");
 							var anotherUl = document.createElement("ul");
 							
 							var ulBox = document.createElement("ul");
 						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+			
 
 						var newSubli = document.createElement("li");
 						
@@ -176,7 +147,7 @@ var startSearch = function() {
 var pageSearch = docGetId("boxSearch");
 var searchBoxButton = docGetId("searchBut");
 
-searchBoxButton.addEventListener("click", startSearch);
+//searchBoxButton.addEventListener("click", startSearch);
 
 
 
