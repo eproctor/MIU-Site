@@ -24,8 +24,8 @@ var docGetId = function(x) {
 
 
 // Grab the data out of local Storage;
-var startSearch = function() {
-
+//var startSearch = function() {
+$("#searchBut").click(function() {
 	
 							var newDiv = document.createElement("div");
 							var viewList = document.getElementById("clearScreen");
@@ -130,7 +130,7 @@ var startSearch = function() {
 
 
 
-} 
+}); 
 
 
 
@@ -176,7 +176,7 @@ var browseLinks = function() {
 
 /* ========== Define Variables ========== */
 
-var surveyCheckBoxes = document.getElementById("checkBoxField").survey;
+var surveyCheckBoxes = $("checkBoxField").survey;
 var  errorVal = docGetId("errorValidation");			
 		
  
@@ -386,7 +386,7 @@ var deleteContact = function() {
 
  /* ======  Save Data to Local Storage  ====== */
 
-var surveyCheckBoxes = document.getElementById("checkBoxField").survey; 	
+var surveyCheckBoxes = $("checkBoxField").survey; 	
  
 var saveData = function(key) {
 	//if there is no key.  This is a new item and needs a new key
@@ -449,8 +449,8 @@ var extraCredit = function() {
 	
 } 	
 
-var slideBar = docGetId("rating");
-slideBar.addEventListener("click", extraCredit);	
+var slideBar = $("rating");
+slideBar.on("click", extraCredit);	
 	
 
 
@@ -654,5 +654,15 @@ var addContact = function() {
 
 
 //------------------------------------------------------------		
+
+$(document).ready(function(){
+
+	foo = function()
+	{
+		alert("Hello");	
+	}
+
+
+});
 
 
