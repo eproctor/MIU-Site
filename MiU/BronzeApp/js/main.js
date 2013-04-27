@@ -16,12 +16,7 @@ var docGetId = function(x) {
 
 }
 
-var $ = function(x) {
 
-	var theId = document.getElementById(x);
-	return theId; 	
-
-}
 
 
 
@@ -58,7 +53,7 @@ $("#searchBut").click(function() {
 
 
 		//alert("Hello");
-		//console.log (pageSearch.value);
+		console.log (pageSearch.value);
 	
 	
 		
@@ -146,7 +141,7 @@ $("#searchBut").click(function() {
 
 
 
-/* ========== Function to Search Data  ========== */
+/* ========== Function to Search Data on About Tab ========== */
 
 
 
@@ -155,7 +150,7 @@ $("#searchBut").click(function() {
 $("#searchButAbout").click(function() {
 	
 							var newDiv = document.createElement("div");
-							var viewList = document.getElementById("clearScreen");
+							var viewList = document.getElementById("clearScreenAbout");
 							
 			
 					
@@ -175,11 +170,11 @@ $("#searchButAbout").click(function() {
 							
 								
 
-	if (pageSearch.value != "") {
+	if (pageSearchAbout.value != "") {
 
 
 		//alert("Hello");
-		//console.log (pageSearch.value);
+		//console.log (pageSearchAbout.value);
 	
 	
 		
@@ -203,9 +198,9 @@ $("#searchButAbout").click(function() {
 
 
 
-					if (pageSearch.value === contact[n][1]) {
+					if (pageSearchAbout.value === contact[n][1]) {
 //					alert (contact[n][1]);
-					console.log (pageSearch.value + " and " + contact[n] [1]);
+					console.log (pageSearchAbout.value + " and " + contact[n] [1]);
 //					
 						for (var q in contact) {
 						
@@ -253,7 +248,252 @@ $("#searchButAbout").click(function() {
 		}
 
 
-	} else { alert ("There is no entry for " + " '   " + pageSearch.value + "   ' "); }
+	} else { alert ("There is no entry for " + " '   " + pageSearchAbout.value + "   ' "); }
+
+
+
+}); 
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+
+
+
+
+/* ========== Function to Search Data on Contacts Tab ========== */
+
+
+
+// Grab the data out of local Storage;
+//var startSearch = function() {
+$("#searchButContacts").click(function() {
+	
+							var newDiv = document.createElement("div");
+							var viewList = document.getElementById("clearScreenContacts");
+							
+			
+					
+							newDiv.setAttribute("id","contact");
+							var newUl = document.createElement("ul");
+						//	newDiv.appendChild(newUl);
+							
+							viewList.appendChild(newUl);
+							
+							
+						//	//document.body.appendChild(newDiv);
+							
+						
+							var newLi = document.createElement("li");
+							newUl.appendChild(newLi);
+								
+							
+								
+
+	if (pageSearchContacts.value != "") {
+
+
+		//alert("Hello");
+		//console.log (pageSearchContacts.value);
+	
+	
+		
+		
+		for (var i=0, len=localStorage.length; i<len; i++) {
+			
+			
+				
+				var key = localStorage.key(i);
+				var correctContact = localStorage.getItem(key);
+				
+				//Take the string from local storage and convert it back to an object by using JSON.parse()
+				var contact = JSON.parse(correctContact);
+		
+				
+				for(var n in contact) {
+				//console.log (contact[n][0] + "  " +contact[n][1]); // temporary for testing
+				
+
+
+
+
+
+					if (pageSearchContacts.value === contact[n][1]) {
+//					alert (contact[n][1]);
+					console.log (pageSearchContacts.value + " and " + contact[n] [1]);
+//					
+						for (var q in contact) {
+						
+					
+					//var anotherLi = document.createElement("li");
+							var anotherUl = document.createElement("ul");
+							
+							var ulBox = document.createElement("ul");
+						
+			
+
+						var newSubli = document.createElement("li");
+						
+						anotherUl.appendChild(newSubli);
+						newLi.appendChild(anotherUl);
+						
+						//var text = contact[n][0] + "  " +contact[n][1]
+						var text = contact[q][0] + "  " +contact[q][1]
+						newSubli.innerHTML = text;
+						
+					
+						var liBox = document.createElement("li");
+						ulBox.appendChild(liBox);
+						newLi.appendChild(ulBox);
+						
+						
+						
+						//liBox.innerHTML = text;
+//						anotherUl.appendChild(anotherLi);
+						
+						
+						
+							console.log (contact[q][0] + "  " +contact[q][1]);
+						}
+						
+			
+//			
+					
+					}
+
+				}
+	
+	
+	
+		}
+
+
+	} else { alert ("There is no entry for " + " '   " + pageSearchContacts.value + "   ' "); }
+
+
+
+}); 
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+
+
+
+/* ========== Function to Search Data on News Tab ========== */
+
+
+
+// Grab the data out of local Storage;
+//var startSearch = function() {
+$("#searchButNews").click(function() {
+	
+							var newDiv = document.createElement("div");
+							var viewList = document.getElementById("clearScreenNews");
+							
+			
+					
+							newDiv.setAttribute("id","contact");
+							var newUl = document.createElement("ul");
+						//	newDiv.appendChild(newUl);
+							
+							viewList.appendChild(newUl);
+							
+							
+						//	//document.body.appendChild(newDiv);
+							
+						
+							var newLi = document.createElement("li");
+							newUl.appendChild(newLi);
+								
+							
+								
+
+	if (pageSearchNews.value != "") {
+
+
+		//alert("Hello");
+		//console.log (pageSearchNews.value);
+	
+	
+		
+		
+		for (var i=0, len=localStorage.length; i<len; i++) {
+			
+			
+				
+				var key = localStorage.key(i);
+				var correctContact = localStorage.getItem(key);
+				
+				//Take the string from local storage and convert it back to an object by using JSON.parse()
+				var contact = JSON.parse(correctContact);
+		
+				
+				for(var n in contact) {
+				//console.log (contact[n][0] + "  " +contact[n][1]); // temporary for testing
+				
+
+
+
+
+
+					if (pageSearchNews.value === contact[n][1]) {
+//					alert (contact[n][1]);
+					console.log (pageSearchNews.value + " and " + contact[n] [1]);
+//					
+						for (var q in contact) {
+						
+					
+					//var anotherLi = document.createElement("li");
+							var anotherUl = document.createElement("ul");
+							
+							var ulBox = document.createElement("ul");
+						
+			
+
+						var newSubli = document.createElement("li");
+						
+						anotherUl.appendChild(newSubli);
+						newLi.appendChild(anotherUl);
+						
+						//var text = contact[n][0] + "  " +contact[n][1]
+						var text = contact[q][0] + "  " +contact[q][1]
+						newSubli.innerHTML = text;
+						
+					
+						var liBox = document.createElement("li");
+						ulBox.appendChild(liBox);
+						newLi.appendChild(ulBox);
+						
+						
+						
+						//liBox.innerHTML = text;
+//						anotherUl.appendChild(anotherLi);
+						
+						
+						
+							console.log (contact[q][0] + "  " +contact[q][1]);
+						}
+						
+			
+//			
+					
+					}
+
+				}
+	
+	
+	
+		}
+
+
+	} else { alert ("There is no entry for " + " '   " + pageSearchNews.value + "   ' "); }
 
 
 
@@ -271,24 +511,13 @@ $("#searchButAbout").click(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Search Variables
 
 var pageSearch = docGetId("boxSearch");
+var pageSearchAbout = docGetId("boxSearchAbout");
+var pageSearchContacts = docGetId("boxSearchContacts");
+var pageSearchNews = docGetId("boxSearchNews");
+
 var searchBoxButton = docGetId("searchBut");
 
 //searchBoxButton.addEventListener("click", startSearch);
