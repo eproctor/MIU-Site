@@ -16,6 +16,12 @@ var docGetId = function(x) {
 
 }
 
+var $ = function(x) {
+
+	var theId = document.getElementById(x);
+	return theId; 	
+
+}
 
 
 
@@ -24,8 +30,8 @@ var docGetId = function(x) {
 
 
 // Grab the data out of local Storage;
-var startSearch = function() {
-
+//var startSearch = function() {
+$("#searchBut").click(function() {
 	
 							var newDiv = document.createElement("div");
 							var viewList = document.getElementById("clearScreen");
@@ -130,12 +136,150 @@ var startSearch = function() {
 
 
 
-} 
+}); 
 
 
 
 
 // -----------------------------------------------------------------------------------
+
+
+
+
+/* ========== Function to Search Data  ========== */
+
+
+
+// Grab the data out of local Storage;
+//var startSearch = function() {
+$("#searchButAbout").click(function() {
+	
+							var newDiv = document.createElement("div");
+							var viewList = document.getElementById("clearScreen");
+							
+			
+					
+							newDiv.setAttribute("id","contact");
+							var newUl = document.createElement("ul");
+						//	newDiv.appendChild(newUl);
+							
+							viewList.appendChild(newUl);
+							
+							
+						//	//document.body.appendChild(newDiv);
+							
+						
+							var newLi = document.createElement("li");
+							newUl.appendChild(newLi);
+								
+							
+								
+
+	if (pageSearch.value != "") {
+
+
+		//alert("Hello");
+		//console.log (pageSearch.value);
+	
+	
+		
+		
+		for (var i=0, len=localStorage.length; i<len; i++) {
+			
+			
+				
+				var key = localStorage.key(i);
+				var correctContact = localStorage.getItem(key);
+				
+				//Take the string from local storage and convert it back to an object by using JSON.parse()
+				var contact = JSON.parse(correctContact);
+		
+				
+				for(var n in contact) {
+				//console.log (contact[n][0] + "  " +contact[n][1]); // temporary for testing
+				
+
+
+
+
+
+					if (pageSearch.value === contact[n][1]) {
+//					alert (contact[n][1]);
+					console.log (pageSearch.value + " and " + contact[n] [1]);
+//					
+						for (var q in contact) {
+						
+					
+					//var anotherLi = document.createElement("li");
+							var anotherUl = document.createElement("ul");
+							
+							var ulBox = document.createElement("ul");
+						
+			
+
+						var newSubli = document.createElement("li");
+						
+						anotherUl.appendChild(newSubli);
+						newLi.appendChild(anotherUl);
+						
+						//var text = contact[n][0] + "  " +contact[n][1]
+						var text = contact[q][0] + "  " +contact[q][1]
+						newSubli.innerHTML = text;
+						
+					
+						var liBox = document.createElement("li");
+						ulBox.appendChild(liBox);
+						newLi.appendChild(ulBox);
+						
+						
+						
+						//liBox.innerHTML = text;
+//						anotherUl.appendChild(anotherLi);
+						
+						
+						
+							console.log (contact[q][0] + "  " +contact[q][1]);
+						}
+						
+			
+//			
+					
+					}
+
+				}
+	
+	
+	
+		}
+
+
+	} else { alert ("There is no entry for " + " '   " + pageSearch.value + "   ' "); }
+
+
+
+}); 
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,7 +320,7 @@ var browseLinks = function() {
 
 /* ========== Define Variables ========== */
 
-var surveyCheckBoxes = document.getElementById("checkBoxField").survey;
+var surveyCheckBoxes = $("checkBoxField").survey;
 var  errorVal = docGetId("errorValidation");			
 		
  
@@ -386,7 +530,7 @@ var deleteContact = function() {
 
  /* ======  Save Data to Local Storage  ====== */
 
-var surveyCheckBoxes = document.getElementById("checkBoxField").survey; 	
+var surveyCheckBoxes = $("checkBoxField").survey; 	
  
 var saveData = function(key) {
 	//if there is no key.  This is a new item and needs a new key
@@ -449,8 +593,8 @@ var extraCredit = function() {
 	
 } 	
 
-var slideBar = docGetId("rating");
-slideBar.addEventListener("click", extraCredit);	
+var slideBar = $("rating");
+slideBar.on("click", extraCredit);	
 	
 
 
@@ -545,7 +689,7 @@ clearBottom.removeAttribute("id","contact");
 		var surveyImageLi = document.createElement("li");
 		anotherUl.appendChild(surveyImageLi)
 		var newPic = document.createElement("img");
-		var setPicSource = newPic.setAttribute("src","css/images/" + picName + ".png");
+		var setPicSource = newPic.setAttribute("src","css/images1/" + picName + ".png");
 		surveyImageLi.appendChild(newPic);
 		
 		
@@ -654,5 +798,15 @@ var addContact = function() {
 
 
 //------------------------------------------------------------		
+
+$(document).ready(function(){
+
+	foo = function()
+	{
+		alert("Hello");	
+	}
+
+
+});
 
 
