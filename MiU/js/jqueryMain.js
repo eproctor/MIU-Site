@@ -19,6 +19,16 @@ var docGetId = function(x) {
 
 
 
+/* ========== Function to GoTo additem.html page  ========== */
+
+
+$("#pocLink").click(function() {
+
+	window.location.replace("additem.html");
+	return false;
+
+});
+
 
 /* ========== Function to Search Data  ========== */
 
@@ -113,6 +123,9 @@ $("#searchBut").click(function() {
 						
 						
 							console.log (contact[q][0] + "  " +contact[q][1]);
+								
+								
+									
 						}
 						
 			
@@ -127,11 +140,17 @@ $("#searchBut").click(function() {
 		}
 
 
-	} else { alert ("There is no entry for " + " '   " + pageSearch.value + "   ' "); }
+	} else { 
+	alert ("There is no entry for " + " '   " + pageSearch.value + "   ' "); 
+	console.log (pageSearch.value);
+	}
 
 
 
 }); 
+
+
+
 
 
 
@@ -248,7 +267,7 @@ $("#searchButAbout").click(function() {
 		}
 
 
-	} else { alert ("There is no entry for " + " '   " + pageSearchAbout.value + "   ' "); }
+	} else { alert ("There is no entry for " + " '  " + pageSearchAbout.value + "   ' "); }
 
 
 
