@@ -10,7 +10,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Paul"],
 			"email":			["Email: ","paul@gmail.com"],
 			"city":				["Type of Material: ","Gold"],
-			"surveyCheckBoxes":	["Collection Category: ","Coins"],			
+			"surveyCheckBoxes":	["Collection Category: ","coins"],			
 			"description":		["Leave a Comment: ","Rare Gold Russian Coin 1800's"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","99"]
 			
@@ -26,7 +26,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Willie"],
 			"email":			["Email: ","willie@gmail.com"],
 			"city":				["Type of Material: ","Gems"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","Diamond Chinese Vase"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","100"]
 			
@@ -43,7 +43,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Anthony"],
 			"email":			["Email: ","anthony@gmail.com"],
 			"city":				["Type of Material: ","Standard Metal"],
-			"surveyCheckBoxes":	["Collection Category: ","Toy"],			
+			"surveyCheckBoxes":	["Collection Category: ","toy"],			
 			"description":		["Leave a Comment: ","Early Century Toy Train"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","79"]
 			
@@ -60,7 +60,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Tom"],
 			"email":			["Email: ","tom@gmail.com"],
 			"city":				["Type of Material: ","Plastic"],
-			"surveyCheckBoxes":	["Collection Category: ","Toy"],			
+			"surveyCheckBoxes":	["Collection Category: ","toy"],			
 			"description":		["Leave a Comment: ","Beetles Doll"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","37"]
 			
@@ -77,7 +77,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Gregg"],
 			"email":			["Email: ","gregg@gmail.com"],
 			"city":				["Type of Material: ","paper"],
-			"surveyCheckBoxes":	["Collection Category: ","Stamps"],			
+			"surveyCheckBoxes":	["Collection Category: ","stamps"],			
 			"description":		["Leave a Comment: ","Early Century American Stamp Mid 1500s"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","58"]
 			
@@ -111,7 +111,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Katie"],
 			"email":			["Email: ","katie@gmail.com"],
 			"city":				["Type of Material: ","Wood"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","12 inch Native American Bracelet"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","23"]
 			
@@ -145,7 +145,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Sam"],
 			"email":			["Email: ","sam@gmail.com"],
 			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","Chinese Onyx Vase"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","42"]
 			
@@ -162,7 +162,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Jody"],
 			"email":			["Email: ","jody@gmail.com"],
 			"city":				["Type of Material: ","Glass"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","15 Century Table Lamp"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","33"]
 			
@@ -179,7 +179,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Heather"],
 			"email":			["Email: ","heather@gmail.com"],
 			"city":				["Type of Material: ","Paper"],
-			"surveyCheckBoxes":	["Collection Category: ","Coins"],			
+			"surveyCheckBoxes":	["Collection Category: ","coins"],			
 			"description":		["Leave a Comment: ","Early American Currency"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","77"]
 			
@@ -196,7 +196,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Dexter"],
 			"email":			["Email: ","dexter@gmail.com"],
 			"city":				["Type of Material: ","Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","Coins"],			
+			"surveyCheckBoxes":	["Collection Category: ","coins"],			
 			"description":		["Leave a Comment: ","Chinese Currency 15 Century"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","81"]
 			
@@ -213,7 +213,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "David"],
 			"email":			["Email: ","david@gmail.com"],
 			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","Diamond Studded Picture Frame  12 Century"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","19"]
 			
@@ -247,7 +247,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "John"],
 			"email":			["Email: ","john@gmail.com"],
 			"city":				["Type of Material: ","Gems"],
-			"surveyCheckBoxes":	["Collection Category: ","Dolls"],			
+			"surveyCheckBoxes":	["Collection Category: ","dolls"],			
 			"description":		["Leave a Comment: ","Pearl Studded American Doll"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","39"]
 			
@@ -315,7 +315,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Charlie"],
 			"email":			["Email: ","charlie@gmail.com"],
 			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","Art"],			
+			"surveyCheckBoxes":	["Collection Category: ","art"],			
 			"description":		["Leave a Comment: ","Amethyst Necklace"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","10"]
 			
@@ -332,7 +332,7 @@ var json = {
 			"fullName":	 		["Collector's Name: ", "Sam"],
 			"email":			["Email: ","sam@gmail.com"],
 			"city":				["Type of Material: ","Glass"],
-			"surveyCheckBoxes":	["Collection Category: ","Toy"],			
+			"surveyCheckBoxes":	["Collection Category: ","toy"],			
 			"description":		["Leave a Comment: ","17 Century Fashion Doll"],
 			"rating":			["Condition of Item 0 Poor - 100 Mint: ","91"]
 			
