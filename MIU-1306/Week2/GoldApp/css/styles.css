@@ -1,9 +1,9 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
+/* Name: Eugene Proctor :: Project 1 :: MIU 1306 */
 
 
 /*
 title: Web App Part 1 - css file 
-by: Eugene Proctor   Term: 1304
+by: Eugene Proctor   Term: 1306
 for: MiU - CSS Selectors
 */
 
@@ -363,9 +363,9 @@ label, input {
 
 #city {
 /*	border: 1px solid blue; */
-//	float: right;
-	float: left;
-	margin-top: 10px;
+	float: right;
+//	float: left;
+//	margin-top: 10px;
 }
 
 
