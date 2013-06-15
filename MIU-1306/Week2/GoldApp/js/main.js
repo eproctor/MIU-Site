@@ -5,6 +5,10 @@
 //window.addEventListener("DOMContentLoaded", function() {
 
 
+
+
+
+
 var docGetId = function(x) {
 
 	var theId = document.getElementById(x);
@@ -14,46 +18,151 @@ var docGetId = function(x) {
 
 
 
-/* =================   Browse Option Home Page ==================*/
+
+/* ========== Function to Search Data  ========== */
 
 
 
-// Good Test	for     var browseCat = docGetId ("browseCategory").value;
-// Good Test for 	console.log (browseCat);
-
-/*	$("browseCategory").mouseup (function() {
-		alert("Handler for .mouseup() called")
-	
-	}
-
-var browseOpt = function () {
-	alert ("Hello");	
-	var browseCat = $("browseCategory").value;
-	console.log (browseCat);
-	//console.log (docGetId("browseCategory").value);
-
-}
-
-*/
-
-	var browseOpt = function() {
-		alert ("Hello browseOpt");
-		var browseCat = docGetId ("browseCategory").value;
-		console.log (browseCat);
+// Grab the data out of local Storage;
+var startSearch = function() {
 
 	
-	}
+							var newDiv = document.createElement("div");
+							var viewList = document.getElementById("clearScreen");
+							
+			
+					
+							newDiv.setAttribute("id","contact");
+							var newUl = document.createElement("ul");
+						//	newDiv.appendChild(newUl);
+							
+							viewList.appendChild(newUl);
+							
+							
+						//	//document.body.appendChild(newDiv);
+							
+						
+							var newLi = document.createElement("li");
+							newUl.appendChild(newLi);
+								
+							
+								
+
+	if (pageSearch.value != "") {
+
+
+		//alert("Hello");
+		//console.log (pageSearch.value);
 	
+	
+		
+		
+		for (var i=0, len=localStorage.length; i<len; i++) {
+			
+			
+				
+				var key = localStorage.key(i);
+				var correctContact = localStorage.getItem(key);
+				
+				//Take the string from local storage and convert it back to an object by using JSON.parse()
+				var contact = JSON.parse(correctContact);
+		
+				
+				for(var n in contact) {
+				//console.log (contact[n][0] + "  " +contact[n][1]); // temporary for testing
+				
 
-/******     Testing to work with jquery *********/
-/******     removeAttribute doesnt work with jquery *********/
-var browseLinks = function() {
-	var muteLinks = $("browseLinksId");
-	muteLinks.removeAttribute("hidden","true");
 
 
-}
 
+
+					if (pageSearch.value === contact[n][1]) {
+//					alert (contact[n][1]);
+					console.log (pageSearch.value + " and " + contact[n] [1]);
+//					
+						for (var q in contact) {
+						
+					
+					//var anotherLi = document.createElement("li");
+							var anotherUl = document.createElement("ul");
+							
+							var ulBox = document.createElement("ul");
+						
+			
+
+						var newSubli = document.createElement("li");
+						
+						anotherUl.appendChild(newSubli);
+						newLi.appendChild(anotherUl);
+						
+						//var text = contact[n][0] + "  " +contact[n][1]
+						var text = contact[q][0] + "  " +contact[q][1]
+						newSubli.innerHTML = text;
+						
+					
+						var liBox = document.createElement("li");
+						ulBox.appendChild(liBox);
+						newLi.appendChild(ulBox);
+						
+						
+						
+						//liBox.innerHTML = text;
+//						anotherUl.appendChild(anotherLi);
+						
+						
+						
+							console.log (contact[q][0] + "  " +contact[q][1]);
+						}
+						
+			
+//			
+					
+					}
+
+				}
+	
+	
+	
+		}
+
+
+	} else { alert ("There is no entry for " + " '   " + pageSearch.value + "   ' "); }
+
+
+
+} 
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+
+
+
+
+//Search Variables
+
+var pageSearch = docGetId("boxSearch");
+var searchBoxButton = docGetId("searchBut");
+
+//searchBoxButton.addEventListener("click", startSearch);
+
+
+
+
+
+
+
+//----------------------------------------------------------------------------------
+
+
+
+//docGetId("reloadPage").addEventListener("click", location.reload); 
+/*
+var setPage = docGetId("reloadPage");
+setPage.setAttribute("click",location.reload);
 
 
 var browseLinks = function() {
@@ -62,13 +171,12 @@ var browseLinks = function() {
 
 
 }
+*/
 
 
 /* ========== Define Variables ========== */
 
-//var surveyCheckBoxes = $("checkBoxField").survey;
-var surveyCheckBoxes = docGetId("checkBoxField").survey;
-
+var surveyCheckBoxes = document.getElementById("checkBoxField").survey;
 var  errorVal = docGetId("errorValidation");			
 		
  
@@ -152,8 +260,7 @@ var editContact = function() {
 
 	
 //Return Form Screen to Display	Form
-		//var emptyScreen = docGetId("hide");
-		var emptyScreen = docGetId("browseLinksId");
+		var emptyScreen = docGetId("hide");
 		emptyScreen.removeAttribute("hidden", "true");	
 		
 
@@ -171,11 +278,13 @@ var editContact = function() {
 	
 	
 		
+		/*
 		var parentBox = docGetId("parent");
 		var auntBox = docGetId("aunt");
 		var guardianBox = docGetId("guardian");
 		var brotherBox = docGetId("brother");
 		var sisterBox = docGetId("sister");
+		*/
 		var carsBox = docGetId("cars");
 		var baseBallCardsBox = docGetId("baseBallCards");
 		var coinsBox = docGetId("coins");
@@ -191,7 +300,7 @@ var editContact = function() {
 		/*======================================================================*/
 		
 				
-		
+		/*
 		if (contact.surveyCheckBoxes[1] === "parent") {
 			parentBox.setAttribute("checked", "checked")}
 			
@@ -206,58 +315,50 @@ var editContact = function() {
 			
 		if (contact.surveyCheckBoxes[1] === "sister") {
 			sisterBox.setAttribute("checked", "checked");}				
-
+*/
 
 
 		if (contact.surveyCheckBoxes[1] === "cars") {
-			parentBox.setAttribute("checked", "checked")}
+			carsBox.setAttribute("checked", "checked")}
 			
 		if (contact.surveyCheckBoxes[1] === "baseBallCards") {
-			auntBox.setAttribute("checked", "checked");
-			console.log (auntBox);}
+			baseBallCardsBox.setAttribute("checked", "checked");}
+			
 		if (contact.surveyCheckBoxes[1] === "coins") {
-			guardianBox.setAttribute("checked", "checked");}
+			coinsBox.setAttribute("checked", "checked");}
 			
 		if (contact.surveyCheckBoxes[1] === "stamps") {
-			brotherBox.setAttribute("checked", "checked");}
+			stampsBox.setAttribute("checked", "checked");}
 			
 		if (contact.surveyCheckBoxes[1] === "art") {
-			sisterBox.setAttribute("checked", "checked");}				
+			artBox.setAttribute("checked", "checked");}				
 			
 
 
 		if (contact.surveyCheckBoxes[1] === "dolls") {
-			parentBox.setAttribute("checked", "checked")}
+			dollsBox.setAttribute("checked", "checked")}
 			
 		if (contact.surveyCheckBoxes[1] === "toys") {
-			auntBox.setAttribute("checked", "checked");
+			toysBox.setAttribute("checked", "checked");
 			console.log (auntBox);}
 		if (contact.surveyCheckBoxes[1] === "military") {
-			guardianBox.setAttribute("checked", "checked");}
+			militaryBox.setAttribute("checked", "checked");}
 			
 		if (contact.surveyCheckBoxes[1] === "scientific") {
-			brotherBox.setAttribute("checked", "checked");}
+			scientificBox.setAttribute("checked", "checked");}
 			
 		if (contact.surveyCheckBoxes[1] === "furniture") {
-			sisterBox.setAttribute("checked", "checked");}				
+			furnitureBox.setAttribute("checked", "checked");}				
 			
 
 
 
-
-
-
-
-
-
-
-			
 	
 // Populate Screen with saved data
 	docGetId("startdate").value = contact.startdate[1];
 	docGetId("fullName").value = contact.fullName[1];
 	docGetId("email").value = contact.email[1];
-	docGetId("collection").value = contact.collection[1];
+	docGetId("city").value = contact.city[1];
 	docGetId("description").value = contact.description[1];
 	docGetId("rating").value = contact.rating[1];
 
@@ -334,8 +435,7 @@ var deleteContact = function() {
 
  /* ======  Save Data to Local Storage  ====== */
 
-//var surveyCheckBoxes = $("checkBoxField").survey; 	
-var surveyCheckBoxes = docGetId("checkBoxField").survey; 	
+var surveyCheckBoxes = document.getElementById("checkBoxField").survey; 	
  
 var saveData = function(key) {
 	//if there is no key.  This is a new item and needs a new key
@@ -351,12 +451,12 @@ var saveData = function(key) {
 
 
 var contact 								= {};
-	contact.startdate						= ["Entry Date:", docGetId("startdate").value];
-	contact.fullName						= ["Collector&#39;s Name:", docGetId("fullName").value];	
+	contact.startdate						= ["Todays Date:", docGetId("startdate").value];
+	contact.fullName						= ["Collector Name:", docGetId("fullName").value];	
 	contact.email							= ["Email:", docGetId("email").value];
-	contact.collection						= ["Type of Material:", docGetId("collection").value];
-	contact.description						= ["Description of Item:", docGetId("description").value];
-	contact.rating							= ["Condition of Item 0 - 100:", docGetId("rating").value];
+	contact.city							= ["Type of Material:", docGetId("city").value];
+	contact.description						= ["Leave a Comment:", docGetId("description").value];
+	contact.rating							= ["Condition of Item 0 Poor - 100 Mint:", docGetId("rating").value];
 	
 
 
@@ -441,7 +541,7 @@ var displayEntries = function() {
 //Prevent multiple displays occurring during display function 
 
 var clearBottom = docGetId("contact");
-clearBottom.removeAttribute("id","contact");
+//clearBottom.removeAttribute("id","contact");
 			
 			
 			
@@ -556,9 +656,7 @@ emptyScreen.setAttribute("hidden", "true");
 
 var emptyStorage = function() {
 	
-	var muteLinks = docGetId("browseLinksId");
-	//muteLinks.removeAttribute("hidden","false");
-	muteLinks.setAttribute("hidden","true");
+	
 	
 	if (localStorage.length===0) {
 	
@@ -566,6 +664,7 @@ var emptyStorage = function() {
 		alert ("Local Storage is Empty.  Testing Data is added");
 		console.log ("The storage is empty. Testing Data is added");
 		fillTestData();
+		displayEntries();
 		
 	} else {
 		
@@ -604,13 +703,7 @@ var addContact = function() {
 //});
 
 
-
-
-
-
-
-
-
 //------------------------------------------------------------		
+
 
 

@@ -1,9 +1,10 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
+/* Name: Eugene Proctor :: Project 1 :: MIU 1306 */
  
 /* ========== JSON Object - Dummy Data for Testing ========== */
 
 
 var json = {
+
 
 		"poc1": {
 			"startdate": 		["Todays Date: ", "2013-01-27"],
@@ -340,9 +341,9 @@ var json = {
 			
 
 				
+
+				
 		}
-
-
 
 }
 
