@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
+
+	<head>
         <title>Eugene Proctor :: Project 1 :: MIU 1306</title>
         <title>App Name :: Collector Collectables</title>
         <meta charset="UTF-8" />
@@ -15,35 +15,44 @@
         <link href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
-    <!----------------------- addItem Page - Collector Collectables --------------------------->
-    <div id="display">
-        <div id="display2">
-            <header>
+
+		<body>
+		
+		<!----------------------- addItem Page - Collector Collectables --------------------------->
+		
+		<!-- div><p onclick="location.reload()" id="reloadPage">Click to Reload Page</p></div -->
+		<div><input type="button" onclick="location.reload()" id="reloadPage" value="Click to Reload Page" /></div>	
+		<div id="display">
+		<div id="display2">
+			
+			<header>
                 	<h1>Collector's Corner</h1> 
                 	<h2>Collector's Information</h2>
 
             </header>
-            <article>
-                <p>This is the Registration Page to Record the Collector's information on a Collection Item.</p>
-            </article>
-            <div class="moreSpace">
+			
+			<article>
+			
+				       <p>This is the Registration Page to Record the Collector's information of a Item.</p>
+				
+			</article>
+				 <div class="moreSpace">
                 <div class="dcaRow"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display |</a></span>
  <span><a href="#" onclick="clearData()" title="Clear Data"> Clear |</a></span>
  <span><a href="#" onclick="addContact()" title="Add Another Contact"> Add |</a></span>
  <span><a href="index.html" title="Add Another Contact"> Home </a></span>
 
                 </div>
-            </div>
-            <div id="browseLinksId">
-                <div id="editLink">
-                    <div id="hide">
-                        <form action="#" method="post" id="checkBoxField">
-                            <fieldset>
-                                <legend>Collector Info</legend>
-                                <div>
-                                    <ul id="errorValidation"></ul>
-                                </div>
-                                <ul class="moreSpace">
+				</div>
+			
+				<div id="editLink">
+					<div  id="hide">
+						<form action = "#" method="post" id="checkBoxField" >
+							<fieldset>
+								<legend>Collector Info</legend>
+								<div><ul id="errorValidation"></ul></div>
+								
+									 <ul class="moreSpace">
                                     <li>
                                         <label id="key">*Required Field</label>
                                     </li>
@@ -52,7 +61,7 @@
                                         <input type="date" min="2012-01-01" max="2013-12-31" id="startdate" name="startdate" placeholder="yyyy-mm-dd" />
                                     </li>
                                     <li>
-                                        <label class="moreSpaceTwo" for="fullName">Collector&#39;s Name:<span class="required">*</span>
+                                        <label class="moreSpaceTwo" for="fullName">Collector Name:<span class="required">*</span>
                                         </label>
                                         <input type="text" id="fullName" />
                                     </li>
@@ -62,10 +71,11 @@
                                         <label class="moreSpaceTwo" for="email">Email Address:</label>
                                         <input type="email" id="email" />
                                     </li>
-                                    <li class="moreSpace"><span>Material Category:</span>
-
-                                        <select id="collection">
-                                            <optgroup label="Please Choose:">
+                                    
+                                    
+											<li class="moreSpace"><span>Material:</span>
+												<select id="city">
+											 <optgroup label="Please Choose:">
                                                 <option value="Make Selection">Make a Selection</option>
                                                 <option value="glass">Glass</option>
                                                 <option value="wood">Wood</option>
@@ -77,12 +87,14 @@
                                                 <option value="stone">Stone</option>
                                                 <option value="rareStone">Rare Stone</option>
                                             </optgroup>
-                                        </select>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Collection Info</legend>
+												</select>
+											</li>
+ 
+ 
+									</ul>
+							</fieldset>
+							<fieldset>
+								 <legend>Collection Info</legend>
                                 <ul>
                                     <li class="moreSpace">Collection Category</li>
                                     <ul>
@@ -111,10 +123,10 @@
                                             <label for="dolls">Dolls</label>
                                         </li>
                                         <li class="moreSpaceSurvey">
-                                            <input id="toys" type="checkbox" name="survey" value="toys" />
-                                            <label for="toys">Toys</label>
+                                            <input id="toy" type="checkbox" name="survey" value="toy" />
+                                            <label for="toy">Toys</label>
                                         </li>
-                                        <li class="moreSpaceSurvey">
+                                        <!-- li class="moreSpaceSurvey">
                                             <input id="military" type="checkbox" name="survey" value="military" />
                                             <label for="military">Military</label>
                                         </li>
@@ -125,9 +137,10 @@
                                         <li class="moreSpaceSurvey">
                                             <input id="furniture" type="checkbox" name="survey" value="furniture" />
                                             <label for="furniture">Furniture</label>
-                                        </li>
+                                        </li -->
                                     </ul>
-                                    <ul>
+                                    
+                                    <!-- ul>
                                         <li class="moreSpaceSurvey">
                                             <input id="parent" type="checkbox" name="survey" value="parent" />
                                             <label for="parent">Parent</label>
@@ -148,7 +161,8 @@
                                             <input id="sister" type="checkbox" name="survey" value="sister" />
                                             <label for="sister">Sister</label>
                                         </li>
-                                    </ul>
+                                    </ul-->
+                                    
                                     <li class="moreSpaceDes">
                                         <label for="description">Description of Item?</label>
                                         <br>
@@ -168,29 +182,30 @@
                                         </li>
                                     </ul>
                                 </ul>
-                            </fieldset>
-                            <footer>
-                                <nav>
-                                    <ul>
-                                        <li class="moreSpace"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display Data |</a></span>
+							</fieldset>	
+						
+							<footer>
+								<nav>
+									<ul>
+										 <li class="moreSpace"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display Data |</a></span>
 											 <span><a href="#" onclick="clearData()" title="Clear Data"> Clear Data</a></span>
-
-                                        </li>
-                                        <li>
-                                            <input type="button" onclick="validate()" id="submitButton" value="Submit Information" />
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </footer>
-                            <div id="contact"></div>
-                        </form>
-                    </div>
-                </div>
-                <script type="text/javascript" src="js/json.js"></script>
-                <script type="text/javascript" src="js/main.js"></script>
-            </div>
-        </div>
-    </div>
-    </body>
+										 </li>
+										
+										<li><input type="button" onclick="validate()" id="submitButton" value="Submit Information" />
+										</li>
+									</ul>
+								</nav>
+							</footer>
+							<div id="contact"></div>
+						</form>	
+					</div>	
+				</div>
+				
+			<script type="text/javascript" src="js/json.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<!-- script type="text/javascript" src="js/ValEmail.js"></script -->
+		</div>
+		</div>
+	</body>
 
 </html>
