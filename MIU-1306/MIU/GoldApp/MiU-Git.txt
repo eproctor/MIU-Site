@@ -1,3 +1,0 @@
-
-
-Link to Git Hub Repository:https://github.com/eproctor/MIU-Site/tree/gh-pages/MIU-1306Link to Live Clickable pagehttp://eproctor.github.io/MIU-Site/MIU-1306/MIU/index.htmlBronze Apphttp://eproctor.github.io/MIU-Site/MIU-1306/Week2/BronzeApp/index.htmlGold Apphttp://eproctor.github.io/MIU-Site/MIU-1306/Week2/GoldApp/index.htmlGh Pages-Bronzehttps://github.com/eproctor/MIU-Site/tree/gh-pages/MIU-1306/Week2/BronzeAppGH Pages - Goldhttps://github.com/eproctor/MIU-Site/tree/gh-pages/MIU-1306/Week2/GoldApp
