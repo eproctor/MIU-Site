@@ -1,324 +1,300 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1306 */
+/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
  
 /* ========== JSON Object - Dummy Data for Testing ========== */
 
 
 var json = {
 
-
 		"poc1": {
 			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Paul"],
+			"fullName":	 		["First Name: ", "Paul"],
 			"email":			["Email: ","paul@gmail.com"],
-			"city":				["Type of Material: ","Gold"],
-			"surveyCheckBoxes":	["Collection Category: ","coins"],			
-			"description":		["Leave a Comment: ","Rare Gold Russian Coin 1800's"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","99"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Paul"],
+			"rating":			["Rate your Comfort Level: ","99"]
 			
 			
 			
 
 				
 		},
-
 
 		"poc2": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Willie"],
-			"email":			["Email: ","willie@gmail.com"],
-			"city":				["Type of Material: ","Gems"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","Diamond Chinese Vase"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","100"]
-			
-			
-			
+			"startdate": 		["Todays Date: ", "2012-03-31"],
+			"fullName":	 		["First Name: ", "Willie"],
+			"email":			["Email: ","Willie@gmail.com"],
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","parent"],			
+			"description":		["Leave a Comment: ","This is a test for Willie"],
+			"rating":			["Rate your Comfort Level: ","100"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc3": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Anthony"],
+			"startdate": 		["Todays Date: ", "2013-01-02"],
+			"fullName":	 		["First Name: ", "Anthony"],
 			"email":			["Email: ","anthony@gmail.com"],
-			"city":				["Type of Material: ","Standard Metal"],
-			"surveyCheckBoxes":	["Collection Category: ","toy"],			
-			"description":		["Leave a Comment: ","Early Century Toy Train"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","79"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Anthony"],
+			"rating":			["Rate your Comfort Level: ","79"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc4": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Tom"],
+			"startdate": 		["Todays Date: ", "2012-05-05"],
+			"fullName":	 		["First Name: ", "Tom"],
 			"email":			["Email: ","tom@gmail.com"],
-			"city":				["Type of Material: ","Plastic"],
-			"surveyCheckBoxes":	["Collection Category: ","toy"],			
-			"description":		["Leave a Comment: ","Beetles Doll"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","37"]
-			
-			
-			
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],			
+			"description":		["Leave a Comment: ","This is a test for Tom"],
+			"rating":			["Rate your Comfort Level: ","37"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
+		
 		"poc5": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Gregg"],
+			"startdate": 		["Todays Date: ", "2012-01-27"],
+			"fullName":	 		["First Name: ", "Gregg"],
 			"email":			["Email: ","gregg@gmail.com"],
-			"city":				["Type of Material: ","paper"],
-			"surveyCheckBoxes":	["Collection Category: ","stamps"],			
-			"description":		["Leave a Comment: ","Early Century American Stamp Mid 1500s"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","58"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Gregg"],
+			"rating":			["Rate your Comfort Level: ","58"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc6": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Jennifer"],
+			"startdate": 		["Todays Date: ", "2011-06-27"],
+			"fullName":	 		["First Name: ", "Jennifer"],
 			"email":			["Email: ","jennifer@gmail.com"],
-			"city":				["Type of Material: ","Paper"],
-			"surveyCheckBoxes":	["Collection Category: ","Base Ball Cards"],			
-			"description":		["Leave a Comment: ","Willie Maes Tops Base Ball Card"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","91"]
-			
-			
-			
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","aunt"],			
+			"description":		["Leave a Comment: ","This is a test for Jennifer"],
+			"rating":			["Rate your Comfort Level: ","91"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
+		
 		"poc7": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Katie"],
+			"startdate": 		["Todays Date: ", "2012-02-27"],
+			"fullName":	 		["First Name: ", "Katie"],
 			"email":			["Email: ","katie@gmail.com"],
-			"city":				["Type of Material: ","Wood"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","12 inch Native American Bracelet"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","23"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","sister"],			
+			"description":		["Leave a Comment: ","This is a test for Katie"],
+			"rating":			["Rate your Comfort Level: ","23"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc8": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Michael"],
+			"startdate": 		["Todays Date: ", "2013-08-15"],
+			"fullName":	 		["First Name: ", "Michael"],
 			"email":			["Email: ","michael@gmail.com"],
-			"city":				["Type of Material: ","Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","cars"],			
-			"description":		["Leave a Comment: ","Stone car 15 Century"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","54"]
-			
-			
-			
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],			
+			"description":		["Leave a Comment: ","This is a test for Michael"],
+			"rating":			["Rate your Comfort Level: ","54"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc9": {
 			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Sam"],
+			"fullName":	 		["First Name: ", "Sam"],
 			"email":			["Email: ","sam@gmail.com"],
-			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","Chinese Onyx Vase"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","42"]
+			"city":				["Travel City: ","atlanta"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Sam"],
+			"rating":			["Rate your Comfort Level: ","42"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc10": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Jody"],
+			"startdate": 		["Todays Date: ", "2012-03-12"],
+			"fullName":	 		["First Name: ", "Jody"],
 			"email":			["Email: ","jody@gmail.com"],
-			"city":				["Type of Material: ","Glass"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","15 Century Table Lamp"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","33"]
-			
-			
-			
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],			
+			"description":		["Leave a Comment: ","This is a test for Jody"],
+			"rating":			["Rate your Comfort Level: ","33"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
+		
 		"poc11": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Heather"],
+			"startdate": 		["Todays Date: ", "2013-01-02"],
+			"fullName":	 		["First Name: ", "Heather"],
 			"email":			["Email: ","heather@gmail.com"],
-			"city":				["Type of Material: ","Paper"],
-			"surveyCheckBoxes":	["Collection Category: ","coins"],			
-			"description":		["Leave a Comment: ","Early American Currency"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","77"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Heather"],
+			"rating":			["Rate your Comfort Level: ","77"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc12": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Dexter"],
+			"startdate": 		["Todays Date: ", "2013-03-27"],
+			"fullName":	 		["First Name: ", "Dexter"],
 			"email":			["Email: ","dexter@gmail.com"],
-			"city":				["Type of Material: ","Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","coins"],			
-			"description":		["Leave a Comment: ","Chinese Currency 15 Century"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","81"]
-			
-			
-			
+			"city":				["Travel City: ","atlanta"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],			
+			"description":		["Leave a Comment: ","This is a test for Dexter"],
+			"rating":			["Rate your Comfort Level: ","81"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc13": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "David"],
+			"startdate": 		["Todays Date: ", "2012-09-14"],
+			"fullName":	 		["First Name: ", "David"],
 			"email":			["Email: ","david@gmail.com"],
-			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","Diamond Studded Picture Frame  12 Century"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","19"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for David"],
+			"rating":			["Rate your Comfort Level: ","19"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc14": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Kimberly"],
+			"startdate": 		["Todays Date: ", "2012-04-17"],
+			"fullName":	 		["First Name: ", "Kimberly"],
 			"email":			["Email: ","kimberly@gmail.com"],
-			"city":				["Type of Material: ","Rare Metal"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","5lbs Statue"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","65"]
-			
-			
-			
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","sister"],			
+			"description":		["Leave a Comment: ","This is a test for Kimberly"],
+			"rating":			["Rate your Comfort Level: ","65"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc15": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "John"],
+			"startdate": 		["Todays Date: ", "2012-01-27"],
+			"fullName":	 		["First Name: ", "John"],
 			"email":			["Email: ","john@gmail.com"],
-			"city":				["Type of Material: ","Gems"],
-			"surveyCheckBoxes":	["Collection Category: ","dolls"],			
-			"description":		["Leave a Comment: ","Pearl Studded American Doll"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","39"]
+			"city":				["Travel City: ","atlanta"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for John"],
+			"rating":			["Rate your Comfort Level: ","39"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc16": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Bill"],
-			"email":			["Email: ","bill@gmail.com"],
-			"city":				["Type of Material: ","Paper"],
-			"surveyCheckBoxes":	["Collection Category: ","Base Ball Cards"],			
-			"description":		["Leave a Comment: ","1914 Babe Ruth Base Ball Card"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","60"]
-			
-			
-			
+			"startdate": 		["Todays Date: ", "2013-04-22"],
+			"fullName":	 		["First Name: ", "Bill"],
+			"email":			["Email: ","bille@gmail.com"],
+			"city":				["Travel City: ","charlotte"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],			
+			"description":		["Leave a Comment: ","This is a test for Bill"],
+			"rating":			["Rate your Comfort Level: ","60"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc17": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Marvin"],
+			"startdate": 		["Todays Date: ", "2012-03-27"],
+			"fullName":	 		["First Name: ", "Marvin"],
 			"email":			["Email: ","marvin@gmail.com"],
-			"city":				["Type of Material: ","Wood"],
-			"surveyCheckBoxes":	["Collection Category: ","dolls"],			
-			"description":		["Leave a Comment: ","Chinese Cross Bow Doll 12th Centrury"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","29"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Marvin"],
+			"rating":			["Rate your Comfort Level: ","29"]
 			
 			
 			
 
 				
 		},
-
-
 
 		"poc18": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Susan"],
+			"startdate": 		["Todays Date: ", "2011-03-20"],
+			"fullName":	 		["First Name: ", "Susan"],
 			"email":			["Email: ","susan@gmail.com"],
-			"city":				["Type of Material: ","Paper"],
-			"surveyCheckBoxes":	["Collection Category: ","Base Ball Cards"],			
-			"description":		["Leave a Comment: ","1954 Hank Arron Base Ball Card"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","100"]
-			
-			
-			
+			"city":				["Travel City: ","atlanta"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","sister"],			
+			"description":		["Leave a Comment: ","This is a test for Susan"],
+			"rating":			["Rate your Comfort Level: ","100"]
+						
+
+
 
 				
 		},
-
-
-
+		
+		
 		"poc19": {
 			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Charlie"],
+			"fullName":	 		["First Name: ", "Charlie"],
 			"email":			["Email: ","charlie@gmail.com"],
-			"city":				["Type of Material: ","Rare Stone"],
-			"surveyCheckBoxes":	["Collection Category: ","art"],			
-			"description":		["Leave a Comment: ","Amethyst Necklace"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","10"]
+			"city":				["Travel City: ","florida"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","guardian"],			
+			"description":		["Leave a Comment: ","This is a test for Charlie"],
+			"rating":			["Rate your Comfort Level: ","10"]
 			
 			
 			
@@ -329,19 +305,17 @@ var json = {
 
 
 		"poc20": {
-			"startdate": 		["Todays Date: ", "2013-01-27"],
-			"fullName":	 		["Collector's Name: ", "Sam"],
+			"startdate": 		["Todays Date: ", "2013-04-27"],
+			"fullName":	 		["First Name: ", "Sam"],
 			"email":			["Email: ","sam@gmail.com"],
-			"city":				["Type of Material: ","Glass"],
-			"surveyCheckBoxes":	["Collection Category: ","toy"],			
-			"description":		["Leave a Comment: ","17 Century Fashion Doll"],
-			"rating":			["Condition of Item 0 Poor - 100 Mint: ","91"]
-			
-			
-			
+			"city":				["Travel City: ","atlanta"],
+			"surveyCheckBoxes":	["Relationship to Owner: ","brother"],
+			"description":		["Leave a Comment: ","This is a test for Sam"],
+			"rating":			["Rate your Comfort Level: ","91"]
 
-				
 
+
+			
 				
 		}
 

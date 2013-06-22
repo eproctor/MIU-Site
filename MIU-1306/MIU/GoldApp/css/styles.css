@@ -7,6 +7,22 @@ by: Eugene Proctor   Term: 1306
 for: MiU - CSS Selectors
 */
 
+label.error {
+
+	display:	block;
+	margin: 	10px 0;
+	color: 		red;
+
+
+}
+
+
+#errorsLink {
+
+	display:none;
+
+}
+
 
 .browseCar {
 text-align: center;
@@ -181,6 +197,7 @@ font-weight: bold;
 
 .blue {
 	color: #0063ec; //blue
+	
 
 }
 
@@ -335,7 +352,7 @@ label, input {
 .moreSpaceDes {
 
 	margin-bottom: 0px;
-	margin-top: 15px;
+	margin-top: 40px;
 
 }
 
@@ -355,12 +372,12 @@ label, input {
 }
 
 
-
+/*
 #startdate, #fullName {
 	float: right;
 	border: 1px solid black; 
 }
-
+*/
 
 /*delete fontEmail line 66*/
 #fontEmail {
@@ -368,11 +385,13 @@ label, input {
 }
 
 
-
+/*
 #email {
 	border: 1px solid black;
 	float: right;
 }
+*/
+
 
 /*delete fontCity*/
 #fontCity {
@@ -464,10 +483,15 @@ ul {
 
 
 li {
-	margin-left: -30px;
+	margin-left: 0px;
+	list-style: none;
 	
 }
 
+
+
+
+/*
 #rating {
 
 	margin-left: -30px;
@@ -475,6 +499,8 @@ li {
 
 
 }
+
+*/
 
 
 #collection {

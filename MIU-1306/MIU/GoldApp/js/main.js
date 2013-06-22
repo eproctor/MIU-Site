@@ -1,4 +1,4 @@
-/* Name: Eugene Proctor :: Project 1 :: MIU 1306 */
+/* Name: Eugene Proctor :: Project 1 :: MIU 1304 */
 
 /* ========== Waiting on Dom to be ready  ========== */
 
@@ -278,29 +278,17 @@ var editContact = function() {
 	
 	
 		
-		/*
 		var parentBox = docGetId("parent");
 		var auntBox = docGetId("aunt");
 		var guardianBox = docGetId("guardian");
 		var brotherBox = docGetId("brother");
 		var sisterBox = docGetId("sister");
-		*/
-		var carsBox = docGetId("cars");
-		var baseBallCardsBox = docGetId("baseBallCards");
-		var coinsBox = docGetId("coins");
-		var stampsBox = docGetId("stamps");
-		var artBox = docGetId("art");
-		var dollsBox = docGetId("dolls");
-		var toysBox = docGetId("toys");
-		var militaryBox = docGetId("military");
-		var scientificBox = docGetId("scientific");
-		var furnitureBox = docGetId("furniture");
 		
 		
 		/*======================================================================*/
 		
 				
-		/*
+		
 		if (contact.surveyCheckBoxes[1] === "parent") {
 			parentBox.setAttribute("checked", "checked")}
 			
@@ -315,44 +303,7 @@ var editContact = function() {
 			
 		if (contact.surveyCheckBoxes[1] === "sister") {
 			sisterBox.setAttribute("checked", "checked");}				
-*/
-
-
-		if (contact.surveyCheckBoxes[1] === "cars") {
-			carsBox.setAttribute("checked", "checked")}
 			
-		if (contact.surveyCheckBoxes[1] === "baseBallCards") {
-			baseBallCardsBox.setAttribute("checked", "checked");}
-			
-		if (contact.surveyCheckBoxes[1] === "coins") {
-			coinsBox.setAttribute("checked", "checked");}
-			
-		if (contact.surveyCheckBoxes[1] === "stamps") {
-			stampsBox.setAttribute("checked", "checked");}
-			
-		if (contact.surveyCheckBoxes[1] === "art") {
-			artBox.setAttribute("checked", "checked");}				
-			
-
-
-		if (contact.surveyCheckBoxes[1] === "dolls") {
-			dollsBox.setAttribute("checked", "checked")}
-			
-		if (contact.surveyCheckBoxes[1] === "toys") {
-			toysBox.setAttribute("checked", "checked");
-			console.log (auntBox);}
-		if (contact.surveyCheckBoxes[1] === "military") {
-			militaryBox.setAttribute("checked", "checked");}
-			
-		if (contact.surveyCheckBoxes[1] === "scientific") {
-			scientificBox.setAttribute("checked", "checked");}
-			
-		if (contact.surveyCheckBoxes[1] === "furniture") {
-			furnitureBox.setAttribute("checked", "checked");}				
-			
-
-
-
 	
 // Populate Screen with saved data
 	docGetId("startdate").value = contact.startdate[1];
@@ -452,11 +403,11 @@ var saveData = function(key) {
 
 var contact 								= {};
 	contact.startdate						= ["Todays Date:", docGetId("startdate").value];
-	contact.fullName						= ["Collector Name:", docGetId("fullName").value];	
+	contact.fullName						= ["First Name:", docGetId("fullName").value];	
 	contact.email							= ["Email:", docGetId("email").value];
-	contact.city							= ["Type of Material:", docGetId("city").value];
+	contact.city							= ["Travel City:", docGetId("city").value];
 	contact.description						= ["Leave a Comment:", docGetId("description").value];
-	contact.rating							= ["Condition of Item 0 Poor - 100 Mint:", docGetId("rating").value];
+	contact.rating							= ["Rate your Comfort Level:", docGetId("rating").value];
 	
 
 
@@ -470,7 +421,7 @@ var contact 								= {};
 	for(i=0, j=surveyCheckBoxes.length; i<j; i++) {
 		if (surveyCheckBoxes[i].checked) {
 			console.log(surveyCheckBoxes[i].value);
-			contact.surveyCheckBoxes		= ["Collection Category:", surveyCheckBoxes[i].value];
+			contact.surveyCheckBoxes		= ["Relationship to Owner:", surveyCheckBoxes[i].value];
 		}
 	}
 	
@@ -541,7 +492,7 @@ var displayEntries = function() {
 //Prevent multiple displays occurring during display function 
 
 var clearBottom = docGetId("contact");
-//clearBottom.removeAttribute("id","contact");
+clearBottom.removeAttribute("id","contact");
 			
 			
 			
@@ -594,7 +545,7 @@ var clearBottom = docGetId("contact");
 		var surveyImageLi = document.createElement("li");
 		anotherUl.appendChild(surveyImageLi)
 		var newPic = document.createElement("img");
-		var setPicSource = newPic.setAttribute("src","images/" + picName + ".png");
+		var setPicSource = newPic.setAttribute("src","css/images1/" + picName + ".png");
 		surveyImageLi.appendChild(newPic);
 		
 		
@@ -664,7 +615,6 @@ var emptyStorage = function() {
 		alert ("Local Storage is Empty.  Testing Data is added");
 		console.log ("The storage is empty. Testing Data is added");
 		fillTestData();
-		displayEntries();
 		
 	} else {
 		
