@@ -199,10 +199,14 @@ var validate = function () {
 // Validate the Form Field 
  var val = function(e) {
  	var valName = docGetId("fullName");
+ 	var valCity = docGetId("city");
+ 	var valCollectCat = docGetId("collectCat")
  	var valEmail = docGetId("email");
  	
 // Clear Error Messages from screen
 	valName.style.border = "1px solid black";
+	valCity.style.border = "1px solid black";
+	//valCollectCat.style.border = "1px solid black";
 	
  	
 
@@ -213,6 +217,8 @@ var validate = function () {
 	if (valName.value == "") {
 		var nameError = "Please enter your name.";
 		valName.style.border = "1px solid red";
+		valCity.style.border = "1px solid red";
+		//valCollectCat.style.border = "1px solid red";
 		
 		errorMsg.push(nameError);
 	} 
