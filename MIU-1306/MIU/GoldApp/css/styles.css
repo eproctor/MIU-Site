@@ -7,6 +7,21 @@ by: Eugene Proctor   Term: 1306
 for: MiU - CSS Selectors
 */
 
+
+
+
+#displayClearLinks {
+
+	text-align: center;
+	margin: 20px 20px;
+
+
+
+}
+
+
+
+
 label.error {
 
 	display:	block;

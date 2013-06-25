@@ -545,7 +545,7 @@ clearBottom.removeAttribute("id","contact");
 		var surveyImageLi = document.createElement("li");
 		anotherUl.appendChild(surveyImageLi)
 		var newPic = document.createElement("img");
-		var setPicSource = newPic.setAttribute("src","css/images1/" + picName + ".png");
+		var setPicSource = newPic.setAttribute("src","images/" + picName + ".png");
 		surveyImageLi.appendChild(newPic);
 		
 		
@@ -615,6 +615,7 @@ var emptyStorage = function() {
 		alert ("Local Storage is Empty.  Testing Data is added");
 		console.log ("The storage is empty. Testing Data is added");
 		fillTestData();
+		displayEntries();
 		
 	} else {
 		
