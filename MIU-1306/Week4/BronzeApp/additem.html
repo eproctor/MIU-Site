@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+        <title>Eugene Proctor :: Project 1 :: MIU 1306</title>
+        <title>App Name :: Collector Collectables</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Launch Page for - Collector Collectables" />
+        <meta name="keyword" contect="Collector Collectables" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" contect="on">
+        <!-- StyleSheet here -->
+        <link href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+		<body>
+		
+		<!----------------------- addItem Page - Collector Collectables --------------------------->
+		
+		<!-- div><p onclick="location.reload()" id="reloadPage">Click to Reload Page</p></div -->
+		<div><input type="button" onclick="location.reload()" id="reloadPage" value="Click to Reload Page" /></div>	
+		<div id="display">
+		<div id="display2">
+			
+			<header>
+                	<h1>Collector's Corner</h1> 
+                	<h2>Collector's Information</h2>
+
+            </header>
+			
+			<article>
+			
+				       <p>This is the Registration Page to Record the Collector's information of a Item.</p>
+				
+			</article>
+				 <div class="moreSpace">
+                <div class="dcaRow"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display |</a></span>
+ <span><a href="#" onclick="clearData()" title="Clear Data"> Clear |</a></span>
+ <span><a href="#" onclick="addContact()" title="Add Another Contact"> Add |</a></span>
+ <span><a href="index.html" title="Add Another Contact"> Home </a></span>
+
+                </div>
+				</div>
+			
+				<div id="editLink">
+					<div  id="hide">
+						<form action = "#" method="post" id="checkBoxField" >
+							<fieldset>
+								<legend>Collector Info</legend>
+								<div><ul id="errorValidation"></ul></div>
+								
+									 <ul class="moreSpace">
+                                    <li>
+                                        <label id="key">*Required Field</label>
+                                    </li>
+                                    <li>
+                                        <label for="startdate">Entry Date:</label>
+                                        <input type="date" min="2012-01-01" max="2013-12-31" id="startdate" name="startdate" placeholder="yyyy-mm-dd" />
+                                    </li>
+                                    <li>
+                                        <label class="moreSpaceTwo" for="fullName">Collector Name:<span class="required">*</span>
+                                        </label>
+                                        <input type="text" id="fullName" />
+                                    </li>
+                                    <!-- li><label class="moreSpaceTwo" for="email">Email Address :</label><input type="email" id="email" placeholder="example@email.com"/ -->
+                                    <!-- li><label class="moreSpaceTwo" for="email">Email Address:<span class="required">*</span></label><input type="email" id="email"/ -->
+                                    <li>
+                                        <label class="moreSpaceTwo" for="email">Email Address:</label>
+                                        <input type="email" id="email" />
+                                    </li>
+                                    
+                                    
+											<li class="moreSpace">Material:<span id="key">*</span>
+												<select id="city" class="required">
+											 <optgroup label="Please Choose:">
+                                                <option value="Make Selection">Make a Selection</option>
+                                                <option value="glass">Glass</option>
+                                                <option value="wood">Wood</option>
+                                                <option value="gems">Gems</option>
+                                                <option value="standardMetal">Standard Metal</option>
+                                                <option value="rareMetal">Rare Metal</option>
+                                                <option value="paper">Paper</option>
+                                                <option value="plastic">Plastic</option>
+                                                <option value="stone">Stone</option>
+                                                <option value="rareStone">Rare Stone</option>
+                                            </optgroup>
+												</select>
+											</li>
+ 
+ 
+									</ul>
+							</fieldset>
+							<fieldset>
+								 <legend>Collection Info<span id="key">*</span></legend>
+                                <ul>
+                                    <li class="moreSpace" id="collectCat">Collection Category</li>
+                                    <ul>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="cars" type="checkbox" name="survey" value="cars" class="required"/>
+                                            <label for="cars">Cars</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="baseBallCards" type="checkbox" name="survey" value="baseBallCards" />
+                                            <label for="baseBallCards">Base Ball Cards</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="coins" type="checkbox" name="survey" value="coins" />
+                                            <label for="coins">Coins</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="stamps" type="checkbox" name="survey" value="stamps" />
+                                            <label for="stamps">Stamps</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="art" type="checkbox" name="survey" value="art" />
+                                            <label for="art">Art</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="dolls" type="checkbox" name="survey" value="dolls" />
+                                            <label for="dolls">Dolls</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="toy" type="checkbox" name="survey" value="toy" />
+                                            <label for="toy">Toys</label>
+                                        </li>
+                                        <!-- li class="moreSpaceSurvey">
+                                            <input id="military" type="checkbox" name="survey" value="military" />
+                                            <label for="military">Military</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="scientific" type="checkbox" name="survey" value="scientific" />
+                                            <label for="scientific">Scientific</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="furniture" type="checkbox" name="survey" value="furniture" />
+                                            <label for="furniture">Furniture</label>
+                                        </li -->
+                                    </ul>
+                                    
+                                    <!-- ul>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="parent" type="checkbox" name="survey" value="parent" />
+                                            <label for="parent">Parent</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="aunt" type="checkbox" name="survey" value="aunt" />
+                                            <label for="aunt">Aunt</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="guardian" type="checkbox" name="survey" value="guardian" />
+                                            <label for="guardian">Guardian</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="brother" type="checkbox" name="survey" value="brother" />
+                                            <label for="brother">Brother</label>
+                                        </li>
+                                        <li class="moreSpaceSurvey">
+                                            <input id="sister" type="checkbox" name="survey" value="sister" />
+                                            <label for="sister">Sister</label>
+                                        </li>
+                                    </ul-->
+                                    
+                                    <li class="moreSpaceDes">
+                                        <label for="description">Description of Item?</label>
+                                        <br>
+                                        <textarea id="description">Comment Here...</textarea>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="turnGreenTravel">Physical Condition of Item:</li>
+                                    <ul>
+                                        <li>
+                                            <label for="rating">0 = Poor | 100 = Mint</label>
+                                            <input id="rating" type="range" min="1" max="100" name="rating" /><span id="ratingTape">Counter</span>
+
+                                        </li>
+                                        <li>
+                                            <input type="hidden" value="false" />
+                                        </li>
+                                    </ul>
+                                </ul>
+							</fieldset>	
+						
+							<footer>
+								<nav>
+									<ul>
+										 <li class="moreSpace"> <span><a href="#" onclick="emptyStorage()" title="Display Data"> Display Data |</a></span>
+											 <span><a href="#" onclick="clearData()" title="Clear Data"> Clear Data</a></span>
+										 </li>
+										
+										<li><input type="button" onclick="validate()" id="submitButton" value="Submit Information" />
+										</li>
+									</ul>
+								</nav>
+							</footer>
+							<div id="contact"></div>
+						</form>	
+					</div>	
+				</div>
+				
+			<script type="text/javascript" src="js/json.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+			<!-- script type="text/javascript" src="js/Sample-main.js"></script -->
+			
+			<!-- script type="text/javascript" src="js/ValEmail.js"></script -->
+		</div>
+		</div>
+	</body>
+
+</html>

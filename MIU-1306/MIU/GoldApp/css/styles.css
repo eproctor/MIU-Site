@@ -10,6 +10,17 @@ for: MiU - CSS Selectors
 
 
 
+div.ui-input-search.ui-shadow-inset.ui-btn-corner-all.ui-btn-shadow.ui-icon-searchfield.ui-body-d.ui-mini,
+div.ui-input-text.ui-shadow-inset.ui-corner-all.ui-btn-shadow.ui-body-d,
+textarea#description.ui-input-text.ui-body-d.ui-corner-all.ui-shadow-inset,
+input#rating.ui-input-text.ui-body-d.ui-corner-all.ui-shadow-inset.ui-slider-input,
+div.ui-input-search.ui-shadow-inset.ui-btn-corner-all.ui-btn-shadow.ui-icon-searchfield.ui-body-c {
+
+	background-color: white;
+
+}
+
+
 #displayClearLinks {
 
 	text-align: center;
@@ -306,6 +317,7 @@ h1 {
 	//padding: 10px;
 	font-weight: normal;
 	font-size 1.5em;
+	margin-top: -36px;
 }
 
 h2 {
@@ -428,11 +440,11 @@ label, input {
 
 }
 
-
+/*
 input:focus, textarea:focus {
 	background-color:yellow;
 }
-
+*/
 
 .desTextBox {
 
@@ -476,6 +488,22 @@ input:focus, textarea:focus {
 	
 		color: red;
 }
+
+
+
+img.logo {
+
+	list-style: none;
+	margin-left: 10px;
+	width: 39px;
+	height: 31px;
+
+}
+
+
+
+
+
 
 img, #browseImage  {
 

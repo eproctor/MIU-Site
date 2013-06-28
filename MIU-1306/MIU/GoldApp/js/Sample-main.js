@@ -492,11 +492,12 @@ var addContact = function() {
  
 // Validate the Form Field 
  var val = function(e) {
+ alert ("Hello This checks for Val");
  	var valName = docGetId("fullName");
  	var valEmail = docGetId("email");
  	
 // Clear Error Messages from screen
-	valName.style.border = "1px solid black";
+	//valName.style.border = "1px solid black";
 	
  	
 
@@ -506,7 +507,7 @@ var addContact = function() {
 // Check for error
 	if (valName.value == "") {
 		var nameError = "Please enter your name.";
-		valName.style.border = "1px solid red";
+		//valName.style.border = "1px solid red";
 		
 		errorMsg.push(nameError);
 	} 
@@ -564,7 +565,7 @@ var addContact = function() {
  
 /* ========== Define Variables ========== */
 
-var surveyCheckBoxes = document.getElementById("checkBoxField").survey;
+// ? var surveyCheckBoxes = document.getElementById("checkBoxField").survey;
 
 //var  errorVal = docGetId("errorValidation");		
 var  errorVal = document.getElementById("errorValidation");	
@@ -720,6 +721,7 @@ $('#collectData').on('pageinit', function(){
 		
 		// to turn on plugin
 		    myForm.validate({
+		    
 			invalidHandler: function(form, validator) {
 				alert ("Function Call for Invalid Handler");
 				errorslink.click();
@@ -738,6 +740,7 @@ $('#collectData').on('pageinit', function(){
 			},
 			submitHandler: function() {
 				var datafromform = myForm.serializeArray();  // Used to pass data internally by converting data into Arrays and Objects
+				//validateSaveForm();
 				//storeData(data);
 				//storeData(datafromform);
 				parseContactList(datafromform);
